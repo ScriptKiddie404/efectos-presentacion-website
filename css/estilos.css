@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&family=Roboto:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+  /* color: #fff; */
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  color: white;
+}
+
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 100;
+  margin-bottom: 0.5em;
+}
+
+p {
+  font-weight: 900;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-bottom: 1rem;
+}
+
+/* =============== */
+/* Estilos páginas */
+/* =============== */
+
+#page-1 {
+  background: #aa076b; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #61045f,
+    #aa076b
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #61045f,
+    #aa076b
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#page-2 {
+  background: #159957; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #155799,
+    #159957
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #155799,
+    #159957
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#page-3 {
+  background: #43cea2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #185a9d,
+    #43cea2
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #185a9d,
+    #43cea2
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#page-4 {
+  background: #ad5389; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #3c1053,
+    #ad5389
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #3c1053,
+    #ad5389
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#page-5 {
+  background: #f857a6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ff5858,
+    #f857a6
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ff5858,
+    #f857a6
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* ESTILOS GENERALES */
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+}
+
+/* BotONES */
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  color: #333;
+  text-decoration: none;
+  border: none;
+  font-size: 1.1rem;
+  transition: all 0.3s ease-in;
+  border-radius: 5px;
+  margin: 1rem;
+}
+
+.btn:hover {
+    background-color: #333;
+    color: white;
+}
+
+.btn-dark{
+    background-color: #333;
+    color:white;
+}
+
+/* .btn-dark:hover {
+    background-color: white;
+    color: #333;
+} */
+
+
+/* ANIMAR PÁGINA */
+
+#page-1 h1 {
+    transform: translateY(-1200px);
+    animation: heading 0.6s forwards ease-in;
+}
+
+@keyframes heading{
+    to{
+        transform: translateY(0);
+    }
+}
+
+#page-1 p{
+    transform: scale(0);
+    animation: appear 0.5s forwards ease-in;
+}
+
+@keyframes appear{
+    to{
+        transform: scale(1);
+    }
+}
